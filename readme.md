@@ -30,13 +30,21 @@ You can use the API by sending a Appropriate request to the following endpoints:
 * passwords are set same for all accounts 😊
 * password : 12345
 
-### Get all users Endpoint
-*   **Method:** POST
+### Register user Endpoint
+*   **Method:** GET
 *   **path:** https://healthflex.onrender.com/api/users/register
 ### login Endpoint
 *   **Method:** POST
 *   **path:** https://healthflex.onrender.com/api/users/login
-### Register Endpoint
+*  **body:** 
+*  ```json
+    "email": "user@gmail.com",
+    "password": "12345"
+    ```
+
+
+  
+### List users Endpoint
 *   **Method:** GET
 *   **path:** https://healthflex.onrender.com/api/users
 *  It is added to know what are the user id's that are present in our Database
@@ -45,6 +53,7 @@ You can use the API by sending a Appropriate request to the following endpoints:
 ### Post Tweet Endpoint
 *   **Method:**  POST
 *   **path:** https://healthflex.onrender.com/api/tweets
+*   **Authorization:** 
 *    It is added to know what are the user id's that are present in our Database in order to check tweets of ids.
 *  we need jwt token which is sent in response after successful login in order to post a tweet
   
