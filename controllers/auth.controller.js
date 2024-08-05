@@ -43,7 +43,7 @@ export const loginController =  async (req, res) => {
       process.env.JWT_SECRET, {expiresIn: "1h"}
     );
 
-    return res.json({ status: "ok",  token , userId: user._id});
+    return res.json({ status: "ok",  token, userid:user._id , userId: user._id});
   } else {
     res.json({ status: "error", message :"invalidd password"});
   }
