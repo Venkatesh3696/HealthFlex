@@ -21,23 +21,21 @@ npm start
 ## Usage
 You can use the API by sending a Appropriate request to the following endpoints:
 
-## Endpoints
-
-app.post('/api/users/register', registerController)
-app.post('/api/users/login', loginController)
-
-app.use('/api/users', userRouter)
-
-app.use('/api/tweets', tweetRouter)
-
-app.use('/api/users/:user_id/timeline', timelineRouter)
+## user credentials 
+* the following are the some user credentials to login
+* email : 
+* * user@gmail.com
+* * user1@gmail.com
+* * user2@gmail.com
+* passwords are set same for all accounts 😊
+* password : 12345
 
 ### Get all users Endpoint
 *   **Method:** POST
 *   **path:** https://healthflex.onrender.com/api/users/register
 ### login Endpoint
 *   **Method:** POST
-*   **path:** https://healthflex.onrender.com/api/users/login users 
+*   **path:** https://healthflex.onrender.com/api/users/login
 ### Register Endpoint
 *   **Method:** GET
 *   **path:** https://healthflex.onrender.com/api/users
