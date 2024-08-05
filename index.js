@@ -2,7 +2,6 @@ import express from "express";
 import dotenv from 'dotenv'
 import { loginController, registerController } from "./controllers/auth.controller.js";
 import connectDb from "./config/connectDb.js";
-// import { createPostController, getPostsController } from "./controllers/posts.controller.js";
 import tweetRouter from './routes/tweets.route.js'
 import timelineRouter from './routes/timeline.route.js'
 

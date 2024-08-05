@@ -1,9 +1,6 @@
-
-
 import User from '../models/users.model.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
-import { message } from 'antd';
 
 export const registerController =  async (req, res) => {
   const {  email, password } = req.body;
