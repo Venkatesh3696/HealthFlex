@@ -41,7 +41,7 @@ app.use('/api/users/:user_id/timeline', timelineRouter)
 ### Register Endpoint
 *   **Method:** GET
 *   **path:** https://healthflex.onrender.com/api/users
-*  It is added to know whata are the user id's that are present in our Database
+*  It is added to know what are the user id's that are present in our Database
 
 
 ### Post Tweet Endpoint
