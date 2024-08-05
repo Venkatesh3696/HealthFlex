@@ -7,9 +7,7 @@ export const registerController =  async (req, res) => {
   
   
   try {
-    
     const user = await User.findOne({email : email})
-    
     if (!user) {      
       const hashedPassword = await bcrypt.hash(password ,10)
       const newUser = await User.create({
@@ -45,7 +43,7 @@ export const loginController =  async (req, res) => {
       process.env.JWT_SECRET, {expiresIn: "1h"}
     );
 
-    return res.json({ status: "ok",  token });
+    return res.json({ status: "ok",  token , userId: user._id});
   } else {
     res.json({ status: "error", message :"invalidd password"});
   }

@@ -4,6 +4,7 @@ import { loginController, registerController } from "./controllers/auth.controll
 import connectDb from "./config/connectDb.js";
 import tweetRouter from './routes/tweets.route.js'
 import timelineRouter from './routes/timeline.route.js'
+import userRouter from './routes/users.route.js'
 
 dotenv.config()
 
@@ -12,6 +13,8 @@ app.use(express.json())
 
 app.post('/api/users/register', registerController)
 app.post('/api/users/login', loginController)
+
+app.use('/api/users', userRouter)
 
 app.use('/api/tweets', tweetRouter)
 
